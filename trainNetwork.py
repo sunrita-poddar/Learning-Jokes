@@ -14,7 +14,7 @@ import sys
 
 # Filename of saved data. Download from:
 # https://www.kaggle.com/abhinavmoudgil95/short-jokes
-jokesFileName = 'shortjokesToy.csv'
+jokesFileName = 'shortjokes.csv'
 
 # Read through the joke corpus once
 len_text = 0
@@ -47,7 +47,7 @@ char_indices = dict((c, i) for i, c in enumerate(chars))
 indices_char = dict((i, c) for i, c in enumerate(chars))
 
 # Parameters for creating training data
-max_train = 1500 # Maximum number of input examples
+max_train = 1500000 # Maximum number of input examples
 maxlen = 50 # Length of input sequence to LSTM
 step = 3 # Characters skipped to generate next training example
 
@@ -133,7 +133,7 @@ def sample(preds, temperature=1.0):
 # Train the network
 
 batch_size = 128
-iterations = 20
+iterations = 2000
 max_out_len = 400 # maximum length of the joke outputted
 
 train_loss = np.zeros((iterations,1))
