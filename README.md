@@ -2,8 +2,7 @@
 
 This project aims to learn a language model from a joke corpus using a deep LSTM network. The problem appears in Open AI's list of fun problems in Deep Learning: https://openai.com/requests-for-research/
 
-A sub-set of the collection of around 200,000 short jokes from Kaggle has been used for the project:
-https://www.kaggle.com/abhinavmoudgil95/short-jokes
+A sub-set of the 
 
 Abhinav Moudgil's blog post had many useful pointers which were helpful in getting started:
 https://amoudgl.github.io/2017-03-01/funnybot/
@@ -25,6 +24,13 @@ The work is still in progress. Though the code is yet to generate very funny coh
 ## trainNetwork. py
 
 Prepares the training and validation data from the .csv file. After every training epoch, a starting seed string is fed as input and characters are predicted one after the other. If the validation error decreases, then the model is saved. The training and validations errors are saved as numpy arrays and updated every epoch.
+
+# Data
+
+## shortJokes.csv
+
+Collection of around 200,000 short jokes from Kaggle:
+https://www.kaggle.com/abhinavmoudgil95/short-jokes
 
 # Things to do
 
