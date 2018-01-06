@@ -2,8 +2,6 @@
 
 This project aims to learn a language model from a joke corpus using a deep LSTM network. The problem appears in Open AI's list of fun problems in Deep Learning: https://openai.com/requests-for-research/
 
-A sub-set of the 
-
 Abhinav Moudgil's blog post had many useful pointers which were helpful in getting started:
 https://amoudgl.github.io/2017-03-01/funnybot/
 
